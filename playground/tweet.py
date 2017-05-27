@@ -19,7 +19,7 @@ if __name__ == "__main__":
     myStream = tweepy.Stream(auth = api.auth, listener=myStreamListener)
     myStream.filter(track=['memorialday'])
 
-
+    locations = None
 # user = api.get_user('AlgoricZhang')
 # print(user.screen_name)
 # print(user.followers_count)

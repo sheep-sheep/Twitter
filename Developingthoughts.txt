@@ -1,0 +1,6 @@
+2017.05.27 Sat
+1. Set up the HTTP request and create a URL to get Twitter infomation
+2. Python API is just a wrapper to fill the required infomation
+3. My task would be monitor the number of tweets coming from PLACE and cotaining this filter.
+4. Then i will dispaly them on a map and this app would call Current Trending.
+5. For later analysis, i'd better save the whole twitter json object and the raw data will be really helpul if i want to apply NLP algorithm.
