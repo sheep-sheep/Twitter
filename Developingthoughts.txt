@@ -4,3 +4,18 @@
 3. My task would be monitor the number of tweets coming from PLACE and cotaining this filter.
 4. Then i will dispaly them on a map and this app would call Current Trending.
 5. For later analysis, i'd better save the whole twitter json object and the raw data will be really helpul if i want to apply NLP algorithm.
+6. Add a save method to the tweepy API.
+7. A good trick is you can use different API and compare them to find the most convient method to achieve your goal
+8. I like the pycharm which help me debug and understand the whole script.
+9. Python wrapps the httpconnection into a Response object then it uses a Reader to get all the info.
+Haha, i feel like i'm able to link all the parts together!
+10. pprint JSON:
+The json module already implements some basic pretty printing with the indent parameter:
+
+>>> import json
+>>>
+>>> your_json = '["foo", {"bar":["baz", null, 1.0, 2]}]'
+>>> parsed = json.loads(your_json)
+>>> print json.dumps(parsed, indent=4, sort_keys=True)
+
+11. The next question is, how do i want to save the data? How do i want to start the analysis?
