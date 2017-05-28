@@ -19,3 +19,6 @@ The json module already implements some basic pretty printing with the indent pa
 >>> print json.dumps(parsed, indent=4, sort_keys=True)
 
 11. The next question is, how do i want to save the data? How do i want to start the analysis?
+We can aslo call an analysis API to do the work, WOW, so amazing.
+
+12. I decided to follow a post and finish the project quickly and then add my idea on top of it. it will save tons of time and still boost my resume.
