@@ -39,6 +39,22 @@ punctuation = list(string.punctuation)
 stop = stopwords.words('english') + punctuation + ['RT', 'via']
 topicparty = ['Cleveland', 'Cavaliers', 'NBA', 'Golden', 'State', 'Warriors', 'Finals']
 
+def results():
+    import json
+    from collections import Counter
+    from nltk import bigrams
+    fname = 'cavs.json'
+    with open(fname, 'r') as f:
+        count_all = Counter()
+        for line in f:
+            # Create a list with all the terms
+            terms_all = [term for term in preprocess(line) if term not in (stop + topicparty)]
+            terms_bigram = bigrams(terms_all)
+            # Update the counter
+            count_all.update(terms_bigram)
+        # Print the first 5 most frequent words
+        return count_all.most_common(5)
+
 if __name__ == '__main__':
     import json
     from collections import Counter
@@ -53,4 +69,4 @@ if __name__ == '__main__':
             # Update the counter
             count_all.update(terms_bigram)
         # Print the first 5 most frequent words
-        print(count_all.most_common(5))
+        print(count_all.most_common(10))
