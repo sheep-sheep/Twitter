@@ -51,3 +51,6 @@ env/
 
 # pyCharm
 .idea
+
+# JSON data
+*.json
